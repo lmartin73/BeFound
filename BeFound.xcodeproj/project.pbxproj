@@ -13,6 +13,9 @@
 		D72CB5151EA71B41007A8FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72CB5141EA71B41007A8FE7 /* Assets.xcassets */; };
 		D72CB5181EA71B41007A8FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72CB5161EA71B41007A8FE7 /* LaunchScreen.storyboard */; };
 		D72CB5211EA83DCF007A8FE7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72CB5201EA83DCF007A8FE7 /* MapKit.framework */; };
+		EF8593A11EA914D500425A6D /* ShelterCoding.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF8593A01EA914D500425A6D /* ShelterCoding.plist */; };
+		EF8593A31EA91EE400425A6D /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8593A21EA91EE400425A6D /* ModalViewController.swift */; };
+		EF8F7A851EA9047900CA859B /* Shelters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F7A841EA9047900CA859B /* Shelters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D72CB5171EA71B41007A8FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D72CB5191EA71B41007A8FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D72CB5201EA83DCF007A8FE7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF8593A01EA914D500425A6D /* ShelterCoding.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShelterCoding.plist; sourceTree = "<group>"; };
+		EF8593A21EA91EE400425A6D /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		EF8F7A841EA9047900CA859B /* Shelters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shelters.swift; path = BeFound/Shelters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,8 @@
 		D72CB5011EA71B41007A8FE7 = {
 			isa = PBXGroup;
 			children = (
+				EF8593A01EA914D500425A6D /* ShelterCoding.plist */,
+				EF8F7A841EA9047900CA859B /* Shelters.swift */,
 				D72CB50C1EA71B41007A8FE7 /* BeFound */,
 				D72CB50B1EA71B41007A8FE7 /* Products */,
 				D72CB51F1EA83DCF007A8FE7 /* Frameworks */,
@@ -64,6 +72,7 @@
 				D72CB5141EA71B41007A8FE7 /* Assets.xcassets */,
 				D72CB5161EA71B41007A8FE7 /* LaunchScreen.storyboard */,
 				D72CB5191EA71B41007A8FE7 /* Info.plist */,
+				EF8593A21EA91EE400425A6D /* ModalViewController.swift */,
 			);
 			path = BeFound;
 			sourceTree = "<group>";
@@ -141,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8593A11EA914D500425A6D /* ShelterCoding.plist in Resources */,
 				D72CB5181EA71B41007A8FE7 /* LaunchScreen.storyboard in Resources */,
 				D72CB5151EA71B41007A8FE7 /* Assets.xcassets in Resources */,
 				D72CB5131EA71B41007A8FE7 /* Main.storyboard in Resources */,
@@ -154,8 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8593A31EA91EE400425A6D /* ModalViewController.swift in Sources */,
 				D72CB5101EA71B41007A8FE7 /* ViewController.swift in Sources */,
 				D72CB50E1EA71B41007A8FE7 /* AppDelegate.swift in Sources */,
+				EF8F7A851EA9047900CA859B /* Shelters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +333,7 @@
 				D72CB51E1EA71B41007A8FE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

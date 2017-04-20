@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>New York</string>
+		<key>phone</key>
+		<string>(212)226-6214</string>
+		<key>latitude</key>
+		<real>40.7128</real>
+		<key>longitude</key>
+		<real>-74.0059</real>
+		<key>hours</key>
+		<string>9 am - 10 pm</string>
+		<key>street1</key>
+		<string>90 Lafayette St</string>
+		<key>city</key>
+		<string>New York</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Bowery Mission</string>
+		<key>phone</key>
+		<string>(212)674-3456</string>
+		<key>latitude</key>
+		<real>40.722106</real>
+		<key>longitude</key>
+		<real>-73.992959</real>
+		<key>hours</key>
+		<string>24 hours</string>
+		<key>street1</key>
+		<string>227 Bowery</string>
+		<key>city</key>
+		<string>New York</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Coalition For The Homeless</string>
+		<key>phone</key>
+		<string>(212)964-5900</string>
+		<key>latitude</key>
+		<real>40.710241</real>
+		<key>longitude</key>
+		<real>-74.007092</real>
+		<key>hours</key>
+		<string>7:30 am - 11:00 pm</string>
+		<key>street1</key>
+		<string>400-430 East 30th St</string>
+		<key>city</key>
+		<string>New York</string>
+	</dict>
+</array>
+</plist>
