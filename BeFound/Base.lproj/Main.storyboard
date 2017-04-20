@@ -7,6 +7,7 @@
         <deployment version="4096" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -198,19 +199,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-eB-zZu">
-                                        <rect key="frame" x="152" y="238" width="39" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Close"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lr-0k-3Ko">
+                                        <rect key="frame" x="58" y="214" width="226" height="42"/>
+                                        <color key="backgroundColor" red="0.30223561859999998" green="0.37363566009999999" blue="0.7323307966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="NdJ-Ph-gs0"/>
+                                        </constraints>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
-                                            <action selector="closeAction:" destination="Uqx-Xh-YRF" eventType="touchUpInside" id="HMi-g5-ggy"/>
+                                            <action selector="closeAction:" destination="Uqx-Xh-YRF" eventType="touchUpInside" id="6ZL-41-G8c"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="JXR-Q5-fC2" firstAttribute="top" secondItem="URu-54-xnv" secondAttribute="bottom" constant="8" id="0WZ-5U-m6m"/>
                                     <constraint firstItem="wMY-5W-6Yq" firstAttribute="leading" secondItem="Lx1-1R-lyJ" secondAttribute="leading" constant="11" id="1Gw-HB-R0V"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="4lr-0k-3Ko" secondAttribute="bottom" constant="12" id="4Yb-2h-daR"/>
                                     <constraint firstItem="ClJ-eZ-KZo" firstAttribute="leading" secondItem="fQx-1B-AY0" secondAttribute="trailing" constant="17" id="8ED-nO-WT0"/>
                                     <constraint firstItem="uMx-1F-cRF" firstAttribute="top" secondItem="Lx1-1R-lyJ" secondAttribute="top" constant="8" id="A1A-LI-7w1"/>
                                     <constraint firstAttribute="height" constant="276" id="C1C-MI-kIE"/>
@@ -224,7 +231,9 @@
                                     <constraint firstItem="JXR-Q5-fC2" firstAttribute="leading" secondItem="Lx1-1R-lyJ" secondAttribute="leading" constant="11" id="Z0w-Q5-3Rf"/>
                                     <constraint firstItem="7NM-ll-LKG" firstAttribute="leading" secondItem="JXR-Q5-fC2" secondAttribute="trailing" constant="17" id="aa2-UZ-iVy"/>
                                     <constraint firstItem="n3i-zz-twU" firstAttribute="leading" secondItem="wMY-5W-6Yq" secondAttribute="trailing" constant="17" id="bIO-mC-Zs7"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="4lr-0k-3Ko" secondAttribute="trailing" constant="51" id="nYj-Pj-0qe"/>
                                     <constraint firstAttribute="trailing" secondItem="7NM-ll-LKG" secondAttribute="trailing" constant="11" id="pNu-1r-CGF"/>
+                                    <constraint firstItem="4lr-0k-3Ko" firstAttribute="leading" secondItem="Lx1-1R-lyJ" secondAttribute="leadingMargin" constant="50" id="pob-33-2jR"/>
                                     <constraint firstItem="ClJ-eZ-KZo" firstAttribute="top" secondItem="uMx-1F-cRF" secondAttribute="bottom" constant="16" id="prY-Ld-ozq"/>
                                     <constraint firstItem="c4k-UP-y1Z" firstAttribute="top" secondItem="ClJ-eZ-KZo" secondAttribute="bottom" constant="8" id="qQh-tZ-Ayf"/>
                                     <constraint firstAttribute="trailing" secondItem="uMx-1F-cRF" secondAttribute="trailing" constant="8" id="s8b-4Z-HdV"/>
@@ -236,7 +245,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Lx1-1R-lyJ" secondAttribute="trailing" constant="16" id="Dbc-Kc-yVb"/>
                             <constraint firstItem="Lx1-1R-lyJ" firstAttribute="leading" secondItem="bbf-YJ-r56" secondAttribute="leading" constant="16" id="H3a-iz-kn2"/>
@@ -245,11 +254,12 @@
                     </view>
                     <connections>
                         <outlet property="city" destination="n3i-zz-twU" id="jLp-Xp-R5U"/>
+                        <outlet property="closeBtn" destination="4lr-0k-3Ko" id="6ua-og-JS1"/>
+                        <outlet property="container" destination="Lx1-1R-lyJ" id="qSV-PZ-Gwb"/>
                         <outlet property="hours" destination="c4k-UP-y1Z" id="hP7-IC-cQK"/>
                         <outlet property="name" destination="uMx-1F-cRF" id="Gbi-ad-ocZ"/>
                         <outlet property="phone" destination="ClJ-eZ-KZo" id="3qj-8c-PTf"/>
                         <outlet property="street" destination="7NM-ll-LKG" id="GcU-fO-18u"/>
-                        <outlet property="title" destination="uMx-1F-cRF" id="dmo-9U-POl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9d-Yo-RhP" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -9,29 +9,38 @@
 import UIKit
 
 class ModalViewController: UIViewController {
-
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var hours: UILabel!
     @IBOutlet weak var street: UILabel!
     @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var closeBtn: UIButton!
+    @IBOutlet weak var container: UIView!
     
-    var shelter = Int()
-    let shelters = Shelter.getShelters()
+    var shelter: Shelter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.clear.withAlphaComponent(0.5)
         view.isOpaque = false
         
-        self.name.text = shelters[shelter].title
-        self.phone.text = shelters[shelter].phone
-        self.hours.text = shelters[shelter].hours
-        self.street.text = shelters[shelter].street1
-        self.city.text = shelters[shelter].city
+        self.name.text = self.shelter.title!
+        self.phone.text = self.shelter.phone!
+        self.hours.text = self.shelter.hours!
+        self.street.text = self.shelter.street1!
+        self.city.text = self.shelter.city!
+        
+        self.closeBtn.layer.cornerRadius = 5
+        self.container.layer.cornerRadius = 5
         
         // Do any additional setup after loading the view.
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.viewDidAppear(animated)
+//
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,7 +48,7 @@ class ModalViewController: UIViewController {
     }
     
     @IBAction func closeAction(_ sender: Any) {
-        self.view.removeFromSuperview()
+        self.dismiss(animated: true, completion: nil)
     }
 
     /*

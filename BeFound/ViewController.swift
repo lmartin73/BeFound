@@ -53,8 +53,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableview.deselectRow(at: indexPath, animated: true)
-        let modal = ModalViewController()
-        modal.shelter = indexPath.row
+        let modal = self.storyboard?.instantiateViewController(withIdentifier: "ModalViewController") as! ModalViewController
+        modal.shelter = shelters[indexPath.row]
         modal.modalPresentationStyle = .overCurrentContext
         present(modal, animated: true, completion: nil)
     }
